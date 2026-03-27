@@ -11,7 +11,7 @@ const DashboardSidebar = ({ selectedSkills, setSelectedSkills, selectedRole, set
   }
 
   return (
-    <aside className="hidden md:flex flex-col w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-6 shrink-0 h-[calc(100vh-65px)] sticky top-[65px]">
+    <aside className="hidden lg:flex flex-col w-64 xl:w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 p-4 md:p-6 shrink-0 h-[calc(100vh-65px)] sticky top-[65px] overflow-y-auto">
       <div className="flex flex-col gap-8 h-full">
         {/* Filters Section */}
         <div className="flex flex-col gap-4">

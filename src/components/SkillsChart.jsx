@@ -86,8 +86,8 @@ export const SkillDemandChart = () => {
   }
 
   return (
-    <div className="w-full h-80 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
-      <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Top Skills in Demand</h3>
+    <div className="w-full h-64 sm:h-72 md:h-80 p-4 md:p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
+      <h3 className="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-4">Top Skills in Demand</h3>
       <Line data={data} options={options} />
     </div>
   )
@@ -182,8 +182,8 @@ export const SalaryByRegionChart = () => {
   }
 
   return (
-    <div className="w-full h-80 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
-      <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Average Salary by Region</h3>
+    <div className="w-full h-64 sm:h-72 md:h-80 p-4 md:p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
+      <h3 className="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-4">Average Salary by Region</h3>
       <Bar data={data} options={options} />
     </div>
   )
@@ -244,8 +244,8 @@ export const JobMarketShareChart = () => {
   }
 
   return (
-    <div className="w-full h-80 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
-      <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Job Market Share by Industry</h3>
+    <div className="w-full h-64 sm:h-72 md:h-80 p-4 md:p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
+      <h3 className="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-4">Job Market Share by Industry</h3>
       <Doughnut data={data} options={options} />
     </div>
   )
@@ -348,8 +348,8 @@ export const CareerGrowthChart = () => {
   }
 
   return (
-    <div className="w-full h-80 p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
-      <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4">Career Growth Trends (2019-2024)</h3>
+    <div className="w-full h-64 sm:h-72 md:h-80 p-4 md:p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg">
+      <h3 className="text-base md:text-lg font-bold text-slate-900 dark:text-white mb-4">Career Growth Trends (2019-2024)</h3>
       <Line data={data} options={options} />
     </div>
   )

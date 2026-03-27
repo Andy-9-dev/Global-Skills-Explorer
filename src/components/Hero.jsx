@@ -8,28 +8,28 @@ const Hero = () => {
 
   return (
     <>
-      <div className="px-6 md:px-20 lg:px-40 py-12">
-        <div className="flex flex-col gap-10 md:flex-row md:items-center">
-          <div className="flex flex-col gap-8 flex-1">
-            <div className="flex flex-col gap-4">
-              <h1 className="text-slate-900 dark:text-white text-5xl md:text-6xl font-black leading-[1.1] tracking-tight animate-fade-in">
+      <div className="px-4 sm:px-6 md:px-20 lg:px-40 py-8 sm:py-12">
+        <div className="flex flex-col gap-6 sm:gap-10 md:flex-row md:items-center">
+          <div className="flex flex-col gap-6 sm:gap-8 flex-1">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <h1 className="text-slate-900 dark:text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight animate-fade-in">
                 Master the <span className="text-primary">Global</span> Job Market
               </h1>
-              <p className="text-slate-600 dark:text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-[540px]">
+              <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-[540px]">
                 Navigate your career with real-time data, precision skill mapping, and global salary benchmarking. Join the future of work today.
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
               <Link 
                 to="/auth/login"
-                className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-slate-900 text-base font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95 transition-all duration-300"
+                className="flex min-w-[140px] sm:min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 sm:h-14 px-6 sm:px-8 bg-primary text-slate-900 text-sm sm:text-base font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 active:scale-95 transition-all duration-300"
               >
                 Start Exploring
               </Link>
               <button 
                 onClick={() => setShowModal(true)}
-                className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-primary/20 bg-transparent text-slate-900 dark:text-white text-base font-bold hover:bg-primary/5 hover:border-primary/40 hover:scale-105 active:scale-95 transition-all duration-300"
+                className="flex min-w-[140px] sm:min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 sm:h-14 px-6 sm:px-8 border-2 border-primary/20 bg-transparent text-slate-900 dark:text-white text-sm sm:text-base font-bold hover:bg-primary/5 hover:border-primary/40 hover:scale-105 active:scale-95 transition-all duration-300"
               >
                 Watch Demo
               </button>
