@@ -10,15 +10,20 @@ export default defineConfig({
     minify: 'esbuild',
     rollupOptions: {
       output: {
-        manualChunks: {
-          'leaflet': ['leaflet'],
-          'chartjs': ['chart.js', 'react-chartjs-2'],
-          'supabase': ['@supabase/supabase-js'],
-          'router': ['react-router-dom'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            if (id.includes('leaflet')) {
+              return 'leaflet'
+            }
+            if (id.includes('chart')) {
+              return 'charts'
+            }
+            return 'vendor'
+          }
         },
       },
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 1500,
   },
   publicDir: 'public',
 })
