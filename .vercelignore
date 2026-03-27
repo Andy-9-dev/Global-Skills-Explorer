@@ -1,0 +1,3 @@
+# Don't ignore these files during Vercel build
+!public/
+!public/favicon.svg
